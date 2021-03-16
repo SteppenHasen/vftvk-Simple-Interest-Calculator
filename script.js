@@ -8,13 +8,7 @@ function compute()
     var yearInTheFuture = years + 2021;
 }
 
-var rangeSlider = function(){
-  var range = getElementById("rate"),
-      value = getElementById("current_range");
-    
-  slider.each(function(){
-
-    value.each(function(){
-      var value = $(this).prev().attr('value');
-      $(this).html(value);
-    })
+function getValue(){
+var slider = document.getElementById('rate');
+document.getElementById('current_range').innerHTML = slider.value + '%';
+}
