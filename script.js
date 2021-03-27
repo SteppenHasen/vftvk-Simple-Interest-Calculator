@@ -4,9 +4,8 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
-    current_year = 2021
 
-    var yearInTheFuture = years + current_year;
+    var yearInTheFuture = Number(years) + Number(2021);
 
     var outputtext = 
     `If you deposit ${principal},\n 
