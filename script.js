@@ -4,16 +4,14 @@ function compute()
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
     var interest = principal * years * rate / 100;
-
     var yearInTheFuture = Number(years) + Number(2021);
 
-    var outputtext = 
-    `If you deposit ${principal},\n 
-    at an interest rate of ${rate}%.\n
-    You will receive an amount of ${interest},\n
-    in the year ${yearInTheFuture}`
+    document.getElementById('prin').innerHTML = principal
+    document.getElementById('rt').innerHTML = rate
+    document.getElementById('int').innerHTML = interest
+    document.getElementById('YITF').innerHTML = yearInTheFuture
 
-    document.getElementById('result').innerHTML = outputtext
+    document.getElementById('result').style.display = "block";
 }
 
 function getValue(){
