@@ -6,12 +6,15 @@ function compute()
     var interest = principal * years * rate / 100;
     var yearInTheFuture = Number(years) + Number(2021);
 
-    document.getElementById('prin').innerHTML = principal
-    document.getElementById('rt').innerHTML = rate + '%'
-    document.getElementById('int').innerHTML = interest
-    document.getElementById('YITF').innerHTML = yearInTheFuture
-
-    document.getElementById('result').style.display = "block";
+    if (principal <= 0 == true) {
+        alert("Please, enter a positive number.")
+    } else {
+        document.getElementById('prin').innerHTML = principal
+        document.getElementById('rt').innerHTML = rate + '%'
+        document.getElementById('int').innerHTML = interest
+        document.getElementById('YITF').innerHTML = yearInTheFuture
+        document.getElementById('result').style.display = "block";
+    }
 }
 
 function getValue(){
