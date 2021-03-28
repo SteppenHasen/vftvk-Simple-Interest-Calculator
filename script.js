@@ -6,7 +6,7 @@ function compute()
     var interest = principal * years * rate / 100;
     var yearInTheFuture = Number(years) + Number(2021);
 
-    if (principal <= 0 == true) {
+    if ((principal <= 0) == true) {
         alert("Please, enter a positive number.")
     } else {
         document.getElementById('prin').innerHTML = principal
